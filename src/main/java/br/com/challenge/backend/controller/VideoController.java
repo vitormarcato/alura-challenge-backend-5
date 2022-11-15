@@ -5,6 +5,7 @@ import java.util.List;
 import java.util.Optional;
 
 import javax.transaction.Transactional;
+import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -27,40 +28,46 @@ import br.com.challenge.backend.repository.VideoRepository;
 @RestController
 @RequestMapping(value = "/videos")
 public class VideoController {
-	
+
 	@Autowired
 	private VideoRepository videoRepository;
-	
+
 	@GetMapping
 	public List<VideoDto> list() {
 		List<Video> videos = videoRepository.findAll();
 		return VideoDto.converter(videos);
 	}
-	
+
+	@GetMapping("/{id}")
+	public ResponseEntity<Object> findById(@PathVariable Long id) {
+		Optional<Video> video = videoRepository.findById(id);
+
+//		regra de negócio para verificar se o id informado é válido.
+		if (video.isPresent()) {
+			return ResponseEntity.ok(new VideoDto(video.get()));
+		}
+
+		return ResponseEntity.notFound().build();
+	}
+
 	@PostMapping
 	@Transactional
-	public ResponseEntity<VideoDto> insert(@RequestBody VideoForm form, UriComponentsBuilder uriBuilder){
+	public ResponseEntity<VideoDto> insert(@RequestBody @Valid VideoForm form, UriComponentsBuilder uriBuilder) {
 		Video video = form.converter(form);
 		videoRepository.save(video);
-		
+
 		URI uri = uriBuilder.path("/videos/{id}").buildAndExpand(video.getId()).toUri();
 		return ResponseEntity.created(uri).body(new VideoDto(video));
 	}
 
-	@GetMapping("/{id}")
-	public Video findById(@PathVariable Long id) {
-		Optional<Video> video = videoRepository.findById(id);
-		return video.get();
-	}
-	
 	@PutMapping("/{id}")
 	@Transactional
-	public ResponseEntity<VideoDto> update(@PathVariable Long id, @RequestBody UpdateVideoForm form){
+	public ResponseEntity<VideoDto> update(@PathVariable Long id, @RequestBody @Valid UpdateVideoForm form) {
 		videoRepository.findById(id);
 		Video video = form.update(id, videoRepository);
 		return ResponseEntity.ok(new VideoDto(video));
 	}
-	
+
 	@DeleteMapping("/{id}")
 	@Transactional
 	public ResponseEntity<?> remove(@PathVariable Long id) {
@@ -69,9 +76,8 @@ public class VideoController {
 			videoRepository.deleteById(id);
 			return ResponseEntity.ok().build();
 		}
-		
+
 		return ResponseEntity.notFound().build();
 	}
 
-	
 }
