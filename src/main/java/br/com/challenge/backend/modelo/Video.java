@@ -1,4 +1,4 @@
-package br.com.challenge.backend.entities;
+package br.com.challenge.backend.modelo;
 
 import java.io.Serializable;
 import java.util.Objects;
@@ -32,6 +32,13 @@ public class Video implements Serializable {
 		this.descricao = descricao;
 		this.url = url;
 	}
+
+	public Video(String titulo, String descricao, String url) {
+		this.titulo = titulo;
+		this.descricao = descricao;
+		this.url = url;
+	}
+	
 
 	public Long getId() {
 		return id;
