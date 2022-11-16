@@ -26,13 +26,13 @@ Objetivo é criar um projeto backend, do início ao fim.
 
 Semana 01 Funcionalidades:
 
- - API com rotas implementadas segundo o padrão REST;
+ - API com rotas implementadas segundo o padrão REST - Feito com Java e Spring boot;
 
- - Validações feitas conforme as regras de negócio;
+ - Validações feitas conforme as regras de negócio - Todos os campos de vídeos devem ser obrigatórios e validados;
 
- - Implementação de base de dados para persistência das informações;
+ - Implementação de base de dados para persistência das informações - Banco de dados H2 no perfil de testes;
 
- - Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE. 
+ - Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE - testes de métodos e status code feitos no Postman. 
 
 
 ### Technologies
