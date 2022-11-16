@@ -12,7 +12,7 @@ Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O bac
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
 | :sparkles: Nome        | Challenge Back-End 5 Alura: AluraFlix
-| :label: Tecnologias | java, postgres, h2
+| :label: Tecnologias | java, postgres, h2, postman, spring boot, hibernate
 | :rocket: URL         | 
 | :fire: Desafio     | https://www.alura.com.br/challenges/back-end-5
 
