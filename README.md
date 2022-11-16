@@ -28,7 +28,7 @@ Semana 01 Funcionalidades:
 
  - API com rotas implementadas segundo o padrão REST - Feito com Java e Spring boot;
 
- - Validações feitas conforme as regras de negócio - Todos os campos de vídeos devem ser obrigatórios e validados;
+ - Validações feitas conforme as regras de negócio - Todos os campos de vídeos preenchidos e validados;
 
  - Implementação de base de dados para persistência das informações - Banco de dados H2 no perfil de testes;
 
