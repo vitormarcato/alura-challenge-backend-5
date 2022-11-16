@@ -2,11 +2,11 @@
 
 Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O backend deve desenvolver as principais funcionalidades a serem implementadas:
 
-Semana 01: Implementar a base de dados escolhida, desenvolvimento da API com rotas CRUD para uma entidade e fazer os primeiros testes.
+ :white_check_mark: Semana 01: Implementar a base de dados escolhida, desenvolvimento da API com rotas CRUD para uma entidade e fazer os primeiros testes. (Feito)
 
-Semana 02: Criar mais de um modelo/entidade, rotas CRUD e relacionais, buscas na base via parâmetros de query, fazer testes de unidade e integração.
+ :warning: Semana 02: Criar mais de um modelo/entidade, rotas CRUD e relacionais, buscas na base via parâmetros de query, fazer testes de unidade e integração. (Em desenvolvimento)
 
-Semana 03 e 04: Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação.
+ :warning: Semana 03 e 04: Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação. (Em desenvolvimento)
 
 
 | :placard: Vitrine.Dev |     |
@@ -50,8 +50,8 @@ Semana 01 Funcionalidades:
 ### Prerequisites
 ---
 
-  - Java17
-  - PostgreSQL 12
+  - Java17 :coffee:
+  - PostgreSQL 12 :elephant:
   
   
 
