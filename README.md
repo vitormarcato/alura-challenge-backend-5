@@ -35,7 +35,7 @@ Semana 01 Funcionalidades:
  - Serviço de autenticação para acesso às rotas GET, POST, PUT e DELETE - testes de métodos e status code feitos no Postman. 
 
 
-### Technologies
+### Tecnologias
 ---
 
   - Java
@@ -47,7 +47,7 @@ Semana 01 Funcionalidades:
   - PostgreSQL
 
 
-### Prerequisites
+### Pré-requisitos
 ---
 
   - Java17 :coffee:
@@ -55,7 +55,7 @@ Semana 01 Funcionalidades:
   
   
 
-### Author
+### Autor
 ---
 
 Vitor Marcato
