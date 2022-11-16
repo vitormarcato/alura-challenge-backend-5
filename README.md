@@ -7,7 +7,8 @@ Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O bac
  :warning: Semana 02: Criar mais de um modelo/entidade, rotas CRUD e relacionais, buscas na base via parâmetros de query, fazer testes de unidade e integração. (Em desenvolvimento)
 
  :warning: Semana 03 e 04: Implementação de mais funcionalidades: paginação, autenticação; deploy da aplicação. (Em desenvolvimento)
-
+ 
+#alurachallengebackend5
 
 | :placard: Vitrine.Dev |     |
 | -------------  | --- |
@@ -15,7 +16,7 @@ Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O bac
 | :label: Tecnologias | java, postgres, h2, postman, spring boot, hibernate
 | :rocket: URL         | 
 | :fire: Desafio     | https://www.alura.com.br/challenges/back-end-5
-#alurachallengebackend5
+
 <img src="https://www.alura.com.br/artigos/assets/o-que-e-aluraflix/destaque-banner-aluraflix.jpg#vitrinedev">
 
 
