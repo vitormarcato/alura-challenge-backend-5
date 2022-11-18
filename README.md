@@ -1,4 +1,4 @@
-# Challenge Back-End 5 Alura: AluraFlix
+# CRUD de Videos - Challenge Back-End 5 Alura
 
 Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O backend deve desenvolver as principais funcionalidades a serem implementadas:
 
