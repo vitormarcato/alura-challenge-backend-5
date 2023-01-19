@@ -1,5 +1,7 @@
 # CRUD de Videos - Challenge Back-End 5 Alura
 
+<img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge">
+
 Trata-se de um projeto para uma plataforma de compartilhamento de vídeos. O backend deve desenvolver as principais funcionalidades a serem implementadas:
 
  :white_check_mark: Semana 01: Implementar a base de dados escolhida, desenvolvimento da API com rotas CRUD para uma entidade e fazer os primeiros testes. (Feito)
